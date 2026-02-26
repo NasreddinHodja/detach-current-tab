@@ -1,0 +1,21 @@
+* Detach Tab
+
+Rewrite of [[https://github.com/Claymont/detach-tab][Claymont/detach-tab]].
+
+Firefox extension to detach and reattach tabs with keyboard shortcuts.
+
+** What changed
+
+- Reattach actually works now (original broke when the source window was destroyed or state was overwritten by manual drags)
+- Stack-based history — detach multiple tabs, reattach them in order
+- Cleanup listeners for closed tabs/windows so stale state doesn't accumulate
+- Dropped the options page (Firefox handles shortcut customization natively via =about:addons=)
+
+** Shortcuts
+
+| Action   | Default             |
+|----------+---------------------|
+| Detach   | =Ctrl+Shift+Space=  |
+| Reattach | =Ctrl+Alt+Space=    |
+
+Customizable via =about:addons= → gear icon → "Manage Extension Shortcuts".

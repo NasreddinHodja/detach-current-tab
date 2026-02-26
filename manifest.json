@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Detach Tab",
+  "version": "3.1.0",
+  "description": "Detach and reattach tabs with customizable keyboard shortcuts.",
+  "developer": {
+    "name": "Claymont",
+    "url": "https://github.com/Claymont/detach-tab"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "detach-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Space"
+      },
+      "description": "Detach active tab into its own window"
+    },
+    "reattach-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+Space"
+      },
+      "description": "Reattach last detached tab to its original window"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "claymont@mail.com_detach-tab",
+      "strict_min_version": "60.0"
+    }
+  }
+}
