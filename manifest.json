@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Detach Tab",
-  "version": "3.1.0",
+  "version": "3.3.0",
   "description": "Detach and reattach tabs with customizable keyboard shortcuts.",
   "developer": {
     "name": "Claymont",
@@ -29,8 +29,12 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "claymont@mail.com_detach-tab",
-      "strict_min_version": "60.0"
+      "id": "detach-tab@nasreddin",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": ["none"],
+        "optional": []
+      }
     }
   }
 }
